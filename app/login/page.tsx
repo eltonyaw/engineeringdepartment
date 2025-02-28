@@ -39,13 +39,13 @@ export default function LoginPage() {
       const user = await signIn(formData.email, formData.password)
 
       // Redirect based on user role
-      if (user.role === "team-member") {
+      if (role === "team-member") {
         router.push("/dashboard/team-member")
-      } else if (user.role === "team-lead") {
+      } else if (role === "team-lead") {
         router.push("/dashboard/team-lead")
-      } else if (user.role === "deputy") {
+      } else if (role === "deputy") {
         router.push("/dashboard/deputy")
-      } else if (user.role === "chief") {
+      } else if (role === "chief" || role === "management") {
         router.push("/dashboard/chief")
       } else {
         router.push("/dashboard")
@@ -72,8 +72,11 @@ export default function LoginPage() {
         return "Team Member Login"
       case "team-lead":
         return "Team Lead Login"
+      case "deputy":
+        return "Deputy Login"
+      case "chief":
       case "management":
-        return "Management Login"
+        return "Chief Login"
       default:
         return "Login"
     }
@@ -122,4 +125,3 @@ export default function LoginPage() {
     </div>
   )
 }
-

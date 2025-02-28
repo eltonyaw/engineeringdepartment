@@ -26,15 +26,6 @@ export default function DashboardPage() {
         <div className="container mx-auto">
           <div className="mb-6 flex items-center justify-between">
             <h2 className="text-2xl font-bold tracking-tight">Dashboard</h2>
-            <div className="flex items-center gap-2">
-              {/* Role selector (for demo purposes) */}
-              <select className="rounded-md border p-2" value={userRole} onChange={(e) => setUserRole(e.target.value)}>
-                <option value="team-member">Team Member</option>
-                <option value="team-lead">Team Lead</option>
-                <option value="deputy">Deputy HOD</option>
-                <option value="hod">Chief Engineer (HOD)</option>
-              </select>
-            </div>
           </div>
 
           <Tabs defaultValue="handovers" className="space-y-4">
@@ -89,4 +80,3 @@ export default function DashboardPage() {
     </div>
   )
 }
-

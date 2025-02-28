@@ -59,7 +59,7 @@ export default function Home() {
 
             <Card>
               <CardHeader className="pb-2">
-                <CardTitle className="text-xl">Deputies & Chief</CardTitle>
+                <CardTitle className="text-xl">Chief</CardTitle>
                 <CardDescription>Access consolidated reports</CardDescription>
               </CardHeader>
               <CardContent>
@@ -69,7 +69,26 @@ export default function Home() {
                 </div>
                 <Link href="/login?role=management" passHref>
                   <Button className="w-full">
-                    Management Login
+                    Chief Login
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="pb-2">
+                <CardTitle className="text-xl">Deputy</CardTitle>
+                <CardDescription>Access and manage shift reports</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center gap-2 text-muted-foreground mb-4">
+                  <UserCircle className="h-5 w-5" />
+                  <span>Review and manage shift handovers</span>
+                </div>
+                <Link href="/login?role=deputy" passHref>
+                  <Button className="w-full">
+                    Deputy Login
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
@@ -89,4 +108,3 @@ export default function Home() {
     </div>
   )
 }
-
