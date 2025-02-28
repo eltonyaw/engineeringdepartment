@@ -11,8 +11,8 @@ export default function Home() {
         <h1 className="text-2xl font-bold text-white">Engineering Shift Handover</h1>
       </header>
 
-      <main className="flex-1 container max-w-6xl py-12 px-4">
-        <section className="space-y-6">
+      <main className="flex-1 container max-w-6xl py-12 px-4 bg-cover bg-center" style={{ backgroundImage: "url(https://th.bing.com/th/id/OIP.5lShcC5rUqGrBlzVN8D7bQHaGL?w=227&h=184&c=7&r=0&o=5&pid=1.7)" }}>
+        <section className="space-y-6 bg-white bg-opacity-70 p-6 rounded-lg">
           <h2 className="text-3xl font-bold tracking-tight">Welcome to the Engineering Shift Handover System</h2>
           <p className="text-muted-foreground text-lg">
             A centralized platform for engineering teams to document and track shift handovers, ensuring seamless
@@ -27,7 +27,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <Link href="/login?role=team-member" passHref>
-                  <Button className="w-full">
+                  <Button className="w-full hover:bg-white hover:text-primary">
                     Team Login
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -42,7 +42,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <Link href="/login?role=team-lead" passHref>
-                  <Button className="w-full">
+                  <Button className="w-full hover:bg-white hover:text-primary">
                     Lead Login
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -57,7 +57,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <Link href="/login?role=management" passHref>
-                  <Button className="w-full">
+                  <Button className="w-full hover:bg-white hover:text-primary">
                     Chief Login
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
@@ -72,7 +72,7 @@ export default function Home() {
               </CardHeader>
               <CardContent>
                 <Link href="/login?role=deputy" passHref>
-                  <Button className="w-full">
+                  <Button className="w-full hover:bg-white hover:text-primary">
                     Deputy Login
                     <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
