@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <header className="bg-primary px-6 py-3 flex items-center">
+        <img src="https://th.bing.com/th/id/OIP.vQ-RtPLJe56VdySfGnK0xwHaGb?w=197&h=180&c=7&r=0&o=5&pid=1.7" alt="Engineering Logo" className="h-12 w-12 mr-4" />
         <h1 className="text-2xl font-bold text-white">Engineering Shift Handover</h1>
       </header>
 
@@ -25,10 +26,6 @@ export default function Home() {
                 <CardDescription>Document your shift activities</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="flex items-center gap-2 text-muted-foreground mb-4">
-                  <ClipboardList className="h-5 w-5" />
-                  <span>Create detailed handover notes</span>
-                </div>
                 <Link href="/login?role=team-member" passHref>
                   <Button className="w-full">
                     Team Login
@@ -44,10 +41,6 @@ export default function Home() {
                 <CardDescription>Review and summarize team reports</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="flex items-center gap-2 text-muted-foreground mb-4">
-                  <Users className="h-5 w-5" />
-                  <span>Manage team handovers and create summaries</span>
-                </div>
                 <Link href="/login?role=team-lead" passHref>
                   <Button className="w-full">
                     Lead Login
@@ -63,10 +56,6 @@ export default function Home() {
                 <CardDescription>Access consolidated reports</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="flex items-center gap-2 text-muted-foreground mb-4">
-                  <UserCircle className="h-5 w-5" />
-                  <span>Review critical information and make decisions</span>
-                </div>
                 <Link href="/login?role=management" passHref>
                   <Button className="w-full">
                     Chief Login
@@ -82,10 +71,6 @@ export default function Home() {
                 <CardDescription>Access and manage shift reports</CardDescription>
               </CardHeader>
               <CardContent>
-                <div className="flex items-center gap-2 text-muted-foreground mb-4">
-                  <UserCircle className="h-5 w-5" />
-                  <span>Review and manage shift handovers</span>
-                </div>
                 <Link href="/login?role=deputy" passHref>
                   <Button className="w-full">
                     Deputy Login
